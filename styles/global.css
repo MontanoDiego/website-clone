@@ -13,9 +13,31 @@ body {
 }
 
 header {
+    background: lightblue;
+    display:grid;
+}
 
+nav a {
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.cd {
+    font-weight: bolder;
+}
+
+#header-logo {
+    border: 20px round black;
 }
 
 main {
-    padding: 20px;
+    background: pink;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 20px 45px 35px 1fr;
+    text-align: center;
+}
+#prevnext {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
 }
