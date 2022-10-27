@@ -17,9 +17,14 @@ header {
     display:grid;
 }
 
+#bread-crumbs {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
 nav a {
-    white-space: nowrap;
     text-decoration: none;
+    /* margin-top: 5px; */
 }
 
 .cd {
@@ -27,7 +32,15 @@ nav a {
 }
 
 #header-logo {
-    border: 20px round black;
+    border-radius: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    line-height: 1;
+    margin: 0 5px 0px;
+    margin-top: 0px;
+    padding: .25em;
+    text-decoration: none;
 }
 
 main {
@@ -36,8 +49,41 @@ main {
     display: grid;
     grid-template-rows: 20px 45px 35px 1fr;
     text-align: center;
+    align-items: center;
 }
 #prevnext {
+    width: 980px;
     display: grid;
     grid-template-columns: 50px 50px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+#prevnext a {
+    align-items: center;
+    text-align: center;
+}
+
+#reply-bar {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.actions {
+    width: 380px;
+}
+
+#reply {
+    background-color: #ece3ef;
+    border: solid #b481c9 1px;
+    border-radius: .2em;
+    color: #7b1fa2;
+    font-size: 1.2em;
+    height: 2em;
+    line-height: 1.2em;
+    padding: 0 .8em;
+    white-space: nowrap;
+    margin-right: 2em;
 }
