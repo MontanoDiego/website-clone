@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(255, 255, 255);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -13,23 +13,77 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: lightblue;
+    display:grid;
 }
 
-header .logo {
-    height: 100%;
+#bread-crumbs {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    /* margin-top: 5px; */
+}
+
+.cd {
+    font-weight: bolder;
+}
+
+#header-logo {
+    border-radius: 1em;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    float: left;
+    line-height: 1;
+    margin: 0 5px 0px;
+    margin-top: 0px;
+    padding: .25em;
+    text-decoration: none;
 }
 
 main {
-    padding: 20px;
+    background: pink;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 20px 45px 35px 1fr;
+    text-align: center;
+    align-items: center;
+}
+#prevnext {
+    width: 980px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+#prevnext a {
+    align-items: center;
+    text-align: center;
+}
+
+#reply-bar {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.actions {
+    width: 380px;
+}
+
+#reply {
+    background-color: #ece3ef;
+    border: solid #b481c9 1px;
+    border-radius: .2em;
+    color: #7b1fa2;
+    font-size: 1.2em;
+    height: 2em;
+    line-height: 1.2em;
+    padding: 0 .8em;
+    white-space: nowrap;
+    margin-right: 2em;
 }
